@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<style>
+    p.solid {border-style: solid;}
+    #content {
+        position: relative;
+    }
+    #content img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    body {
+        background-color: #cecece;
+    }
+    table, th, td {
+        border: 3px solid black;
+        border-collapse: collapse;
+        font-size: 25px;
+    }
+    h1 {
+        text-align: center;
+    }
+</style>
+<head>
+    <title>Service Mesh Patterns Dashboard</title>
+</head>
+<body>
+    <h1>KYNDRYL OCP Engineering</h1> 
+    <h2><br>Service Mesh Ingress/Egress Patterns Connection Status</br></h2>
+    <br><table  style="width: 90%;">
+        <tr>
+            <th style="width:20%;">Pattern Name</th>
+            <th style="width:40%;">Endpoint URL</th>
+            <th style="width:20%;">HTTP Status Code</th>
+            <th style="width:30%;">HTTP Status Reason</th>
+        </tr>
+        {% for key, value in urls.items() %}
+        <tr>
+            <td>{{key}}</td>
+            <td>{{value[0]}}</td>
+            <td>{{value[1]}}</td>
+            <td>{{value[2]}}</td>
+        </tr> 
+        {% endfor %}
+    </br></table>
+</body>
+</html>

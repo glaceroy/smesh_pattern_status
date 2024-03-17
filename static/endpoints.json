@@ -1,0 +1,7 @@
+{
+    "Egress pattern 1": "facebook.com",
+    "Egress pattern 3.1": "github.com",
+    "Egress pattern 3.2": "stackoverflow.com",
+    "Egress pattern 4": "google.com",
+    "Ingress pattern 1": "instagram.com"
+}
