@@ -28,4 +28,4 @@ def dashboard():
     return render_template('index.html', urls=eps_dict)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=7000, use_reloader=True, debug=True)
+    app.run(host="0.0.0.0", port=5000, use_reloader=True, debug=True)
